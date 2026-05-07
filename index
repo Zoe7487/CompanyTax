@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>軟體業節稅全攻略 - 解決方案中心</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --brand-green: #2ecc71;
+            --brand-red: #e74c3c;
+            --brand-blue: #3498db;
+            --brand-dark: #0f172a;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.8;
+            font-size: 1.3rem;
+            scroll-behavior: smooth;
+        }
+
+        .container-main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .section-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        h2 { 
+            font-size: 2.4rem; 
+            color: #0f172a; 
+            border-left: 12px solid var(--brand-green);
+            padding-left: 20px;
+            margin-bottom: 2rem;
+            font-weight: 900;
+        }
+
+        /* 導覽按鈕強化 */
+        .jump-btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1.25rem;
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 1rem;
+            font-weight: 800;
+            transition: all 0.2s;
+            font-size: 1.2rem;
+            color: #334155;
+            width: 100%;
+        }
+        .jump-btn:hover {
+            border-color: var(--brand-green);
+            background: #f0fdf4;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            color: #065f46;
+        }
+        .jump-btn i {
+            width: 40px;
+            font-size: 1.5rem;
+            color: var(--brand-green);
+        }
+
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 1.2rem;
+        }
+        .check-item i { color: var(--brand-green); margin-top: 6px; font-size: 1.5rem; }
+
+        .banner-sticky {
+            background: var(--brand-dark);
+            color: white;
+            padding: 0.75rem 0;
+            border-bottom: 4px solid var(--brand-green);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .info-box {
+            background: #f1f5f9;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 8px solid var(--brand-blue);
+        }
+
+        .cross-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 1rem;
+            color: #991b1b;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頂部精簡橫幅 -->
+    <header class="banner-sticky shadow-lg">
+        <div class="container-main flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-chart-line text-emerald-400 text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-black tracking-tight">軟體公司節稅：操作清單</h1>
+            </div>
+            <a href="#solutions" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-1 rounded-full text-sm font-bold transition">返回方案中心</a>
+        </div>
+    </header>
+
+    <main class="container-main mt-6">
+
+        <!-- 緊湊型現狀分析 -->
+        <section id="intro" class="section-card py-6 bg-slate-900 text-white">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex-1">
+                    <h2 class="text-emerald-400 border-emerald-400 mb-2 py-0 text-xl md:text-2xl">目前情況</h2>
+                    <p class="text-slate-400 text-base">軟體業「銷項高、進項少」，稅負壓力偏大。</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="bg-slate-800 px-6 py-3 rounded-2xl text-center">
+                        <p class="text-emerald-400 font-black text-2xl">高毛利</p>
+                        <p class="text-xs text-slate-400">營收高/成本低</p>
+                    </div>
+                    <div class="bg-slate-800 px-6 py-3 rounded-2xl text-center">
+                        <p class="text-rose-400 font-black text-2xl">少抵扣</p>
+                        <p class="text-xs text-slate-400">缺乏進項發票</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心導覽：解決方案 (放大區塊) -->
+        <section id="solutions" class="section-card border-4 border-emerald-500 shadow-2xl">
+            <div class="text-center mb-8">
+                <p class="text-emerald-600 font-black text-xl mb-2">核心目標：把合理成本制度化</p>
+                <h2 class="border-none pl-0 mb-0 text-4xl">解決方案總覽</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- 第一階段 -->
+                <div class="bg-emerald-50 p-6 rounded-3xl border-2 border-emerald-100">
+                    <h3 class="text-emerald-800 font-black text-xl mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-gauge-high"></i> 第一階段：立刻做
+                    </h3>
+                    <div class="space-y-3">
+                        <a href="#salary" class="jump-btn"><i class="fa-solid fa-user-tie"></i>老闆薪資制度化</a>
+                        <a href="#saas" class="jump-btn"><i class="fa-solid fa-cloud"></i>SaaS 與設備公司化</a>
+                        <a href="#rd-record" class="jump-btn"><i class="fa-solid fa-microchip"></i>建立研發專案紀錄</a>
+                        <a href="#travel" class="jump-btn"><i class="fa-solid fa-car-side"></i>差旅制度化</a>
+                    </div>
+                </div>
+
+                <!-- 第二階段 -->
+                <div class="bg-blue-50 p-6 rounded-3xl border-2 border-blue-100">
+                    <h3 class="text-blue-800 font-black text-xl mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i> 第二階段：中期
+                    </h3>
+                    <div class="space-y-3">
+                        <a href="#rd-apply" class="jump-btn"><i class="fa-solid fa-file-invoice-dollar"></i>申請研發投資抵減</a>
+                        <a href="#family" class="jump-btn"><i class="fa-solid fa-users"></i>家人正式任職</a>
+                        <a href="#tax" class="jump-btn"><i class="fa-solid fa-piggy-bank"></i>未分配盈餘規劃</a>
+                    </div>
+                </div>
+
+                <!-- 第三階段 -->
+                <div class="bg-slate-50 p-6 rounded-3xl border-2 border-slate-200">
+                    <h3 class="text-slate-800 font-black text-xl mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chess"></i> 第三階段：成熟期
+                    </h3>
+                    <div class="space-y-3">
+                        <a href="#split" class="jump-btn"><i class="fa-solid fa-sitemap"></i>公司分拆 (IP/維運)</a>
+                        <a href="#accounting" class="jump-btn"><i class="fa-solid fa-file-signature"></i>會計與憑證制度</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. 老闆薪資制度化 -->
+        <section id="salary" class="section-card">
+            <h2>1. 老闆薪資制度化</h2>
+            <p class="mb-6">軟體公司老闆不應只領少量薪資。應將薪資支出「正式化」。</p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="check-item font-bold"><i class="fa-solid fa-circle-check"></i><div>正式職務：總經理、技術長或顧問。</div></div>
+                <div class="check-item font-bold"><i class="fa-solid fa-circle-check"></i><div>固定配置：月薪、年終、勞健保與勞退。</div></div>
+            </div>
+            <div class="info-box border-emerald-500">
+                <p><strong>優點：</strong>公司可列薪資費用，且個人所得稅級距可能比公司營所稅 (20%) 更低。</p>
+            </div>
+        </section>
+
+        <!-- 2. 研發專案紀錄與抵減 -->
+        <section id="rd-record" class="section-card">
+            <h2>2. 研發專案紀錄與抵減</h2>
+            <div id="rd-apply" class="bg-purple-900 text-white p-8 rounded-3xl mb-8">
+                <h3 class="text-2xl font-black text-emerald-400 mb-4">研發抵減：軟體業的最愛</h3>
+                <p class="mb-4">可列入研發的項目：</p>
+                <div class="grid md:grid-cols-2 gap-6 text-base opacity-90">
+                    <ul class="space-y-2">
+                        <li>• 工程師、UI/UX、PM、QA 薪資</li>
+                        <li>• 雲端主機 (AWS/Azure) 與 API 費用</li>
+                    </ul>
+                    <ul class="space-y-2">
+                        <li>• AI 模型測試費與測試環境成本</li>
+                        <li>• 外包開發與專案顧問費</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border-l-8 border-purple-500">
+                <p class="font-black text-xl mb-4 text-purple-800">關鍵：建立「研發專案代碼」</p>
+                <p class="text-base mb-2">對應專案（如 EDU-2026）、保留 Git/Jira 紀錄、紀錄工時。</p>
+                <p class="text-sm text-slate-500 italic">這會決定「研發抵減」申請的成功率。</p>
+            </div>
+        </section>
+
+        <!-- 3. SaaS 與設備公司化 -->
+        <section id="saas" class="section-card">
+            <h2>3. SaaS 與設備公司化</h2>
+            <p class="mb-6">不要用老闆個人卡付款。所有雲端支出應由公司支付並打統編。</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-sky-50 p-4 rounded-xl text-center font-bold border border-sky-100">OpenAI</div>
+                <div class="bg-sky-50 p-4 rounded-xl text-center font-bold border border-sky-100">AWS / Cloud</div>
+                <div class="bg-sky-50 p-4 rounded-xl text-center font-bold border border-sky-100">GitHub</div>
+                <div class="bg-sky-50 p-4 rounded-xl text-center font-bold border border-sky-100">Figma / Canva</div>
+            </div>
+            <div id="equipment" class="bg-emerald-50 p-6 rounded-2xl border-l-8 border-emerald-500">
+                <h3 class="font-black text-xl mb-2 text-emerald-800">設備汰換制度</h3>
+                <p class="text-base">MacBook、工作站、測試手機平板，定期汰換可將設備折舊列為公司費用。</p>
+            </div>
+        </section>
+
+        <!-- 4. 差旅制度化 -->
+        <section id="travel" class="section-card">
+            <h2>4. 差旅制度化</h2>
+            <p class="mb-6">賣系統跑學校是合理業務開銷，應落實紀錄。</p>
+            <div class="bg-orange-50 p-6 rounded-2xl grid md:grid-cols-2 gap-4">
+                <div class="check-item font-bold"><i class="fa-solid fa-check"></i><span>高鐵、停車費、Uber/計程車</span></div>
+                <div class="check-item font-bold"><i class="fa-solid fa-check"></i><span>跨縣市住宿、合理客戶餐費</span></div>
+            </div>
+            <p class="mt-4 text-base text-orange-800 font-bold italic">※ 重點：必須保留拜訪紀錄、行程與客戶名稱。</p>
+        </section>
+
+        <!-- 5. 公司分拆 (IP/維運) -->
+        <section id="split" class="section-card">
+            <h2>5. 公司分拆 (IP/維運)</h2>
+            <p class="mb-8">業務規模穩定後，建議將「產品」與「服務」切開：</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 bg-slate-50 rounded-2xl border-b-8 border-indigo-500 text-center">
+                    <p class="font-black text-xl mb-1">A 公司 (IP)</p>
+                    <p class="text-sm">持有著作權<br>收授權金</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border-b-8 border-emerald-500 text-center">
+                    <p class="font-black text-xl mb-1">B 公司 (案場)</p>
+                    <p class="text-sm">標案、客製化需求</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border-b-8 border-amber-500 text-center">
+                    <p class="font-black text-xl mb-1">C 公司 (維運)</p>
+                    <p class="text-sm">客服、資料維護</p>
+                </div>
+            </div>
+            <p class="mt-8 text-base text-slate-500">優點：風險隔離、財務清楚、有利未來出售公司。</p>
+        </section>
+
+        <!-- 6. 家人正式任職 -->
+        <section id="family" class="section-card">
+            <h2>6. 家人正式任職</h2>
+            <div class="bg-rose-50 p-6 rounded-2xl border-l-8 border-rose-500">
+                <p class="font-bold mb-4">合法配置家人進入公司：</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-xl border border-rose-100">
+                        <p class="font-bold text-rose-700">配偶</p>
+                        <p class="text-sm">行政、人資、財務</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-rose-100">
+                        <p class="font-bold text-rose-700">父母</p>
+                        <p class="text-sm">顧問、行政支援</p>
+                    </div>
+                </div>
+                <p class="mt-6 text-base font-black text-rose-800 italic underline">※ 關鍵：必須有真實工作、薪轉與勞健保，不可掛名。</p>
+            </div>
+        </section>
+
+        <!-- 7. 未分配盈餘規劃 -->
+        <section id="tax" class="section-card">
+            <h2>7. 未分配盈餘規劃</h2>
+            <p class="mb-6">軟體公司獲利高，若盈餘不發股利會被多課 5% 稅金。</p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 bg-amber-50 rounded-2xl border border-amber-200">
+                    <p class="font-black text-amber-900 mb-2">方案 A：發放股利</p>
+                    <p class="text-base text-amber-800">在個人稅與公司稅之間取得平衡。</p>
+                </div>
+                <div class="p-6 bg-emerald-50 rounded-2xl border border-emerald-200">
+                    <p class="font-black text-emerald-900 mb-2">方案 B：再投資</p>
+                    <p class="text-base text-emerald-800">用於 AI 開發、硬體升級、研發設備。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. 會計與憑證制度 -->
+        <section id="accounting" class="section-card">
+            <h2>8. 會計與憑證制度</h2>
+            <p class="mb-6 font-black text-slate-700">找到「懂軟體業」的會計師非常重要。</p>
+            <div class="space-y-4">
+                <div class="check-item font-bold"><i class="fa-solid fa-check"></i><div>發票分類：雲端、廣告、研發、差旅、設備。</div></div>
+                <div class="check-item font-bold"><i class="fa-solid fa-check"></i><div>雲端保存：PDF 發票、刷卡紀錄、合約完整備份。</div></div>
+            </div>
+        </section>
+
+        <!-- 禁止行為 -->
+        <section id="donts" class="section-card border-rose-400 border-4 bg-rose-50">
+            <h2 class="text-rose-600 border-none pl-0 mb-8"><i class="fa-solid fa-ban mr-3"></i>絕對不可做的事</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="cross-item text-xl"><i class="fa-solid fa-xmark"></i>私人帳戶收款 (校方公款)</div>
+                <div class="cross-item text-xl"><i class="fa-solid fa-xmark"></i>買假發票 (無交易)</div>
+                <div class="cross-item text-xl"><i class="fa-solid fa-xmark"></i>關係企業亂開發票</div>
+                <div class="cross-item text-xl"><i class="fa-solid fa-xmark"></i>沒工作的掛名薪資</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-white py-16 text-center">
+        <div class="container-main">
+            <p class="text-2xl font-black mb-4">結論：高毛利知識型公司</p>
+            <p class="text-emerald-400 font-bold mb-4">增加合法成本，是長期發展的唯一正確做法。</p>
+            <p class="text-slate-500 text-sm opacity-50 italic">※ 本內容僅供內部討論參考，執行細節建議與會計師最終確認。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
